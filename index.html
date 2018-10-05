@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<title>Resilient Coastal Cities | Coastal Resilience</title>
+	<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+ 	<!-- Jquery, ESRI stylesheets -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.6.2/chosen.css">
+	<!-- Story map css -->
+	<link rel="stylesheet" href="css/storyMap.css">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<!-- jquery code -->
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script src="js/chosen.jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<!-- Bring in js code for the story map -->
+	<script src="js/makevariables.js"></script>
+	<script src="js/storyMapControls.js"></script>
+</head>
+
+  <body>
+	<!-- Main Panel ################################################################################################################ -->
+	<!-- ######################################################################################################################## -->
+	<div class="sm-storyPanel" id="mainPanel" style="display: none;">
+		<!-- Logo on main panel of app, chnage source here to change logo. will take any image format -->
+		<div class="sm-logoWrapper">
+			<img style="height: 40px; width: 144px;" src="">
+		</div>
+		<!-- Skip to map application button -->
+		<div class="sm-skipToMap">
+			<div class="sm-skipToMapBtn">Skip to Mapping Application</div>
+		</div>
+	    <!-- panel content goes below here -->
+		<div class="sm-panel1Header"></div>
+		<div class="sm-panel1TextBody">
+			<div></div>
+		</div>
+	    <img style="display: none;" id="imageMain" class="sm-imgPanelWithCaption" src="images/Indo_1.jpg">
+	    <div class="sm-photoCaption">
+	    	<span>Ecosystems are not only valuable for mitigating risk, but also support development and humanitarian goals.</span>
+	    </div>
+
+	</div>
+
+	<!-- Panel 2 ################################################################################################################ -->
+	<!-- ######################################################################################################################## -->
+	<div class="sm-storyPanel sm-storyPanel4" id="panel4" style="display: none;">
+	    <img style="display: none;" id="imagePanel4" class="sm-imgPanelWithCaption sm-imgPanelSmall" src="">
+	    <div class="sm-photoCaption sm-photoCaption4">
+	    	<span>Need a caption here</span>
+	    </div>
+	</div>
+	<div class="sm-textPanel">
+		<div>
+			In 2015 GDPC began a coalition-building project across Southeast Asia with local Red Cross Societies to build community resilience and problem solve around specific hazards in city environments. <br><br>
+			This partnership is designed to identify and advance collaborative activities that jointly build ecological and social solutions to increase the resilience of communities from natural disasters and climate impacts.
+
+		</div>
+	</div>
+	<!-- Panel 3 ################################################################################################################ -->
+	<!-- ######################################################################################################################## -->
+	<div class="sm-storyPanel sm-storyPanel2" id="panel2" style="display: none;">
+		
+		<!-- Media for panel 2 goes here change the source in img or video tags /////////////////////////////////////////////// -->
+		<video style="display: none;" muted playsinline autoplay="true" loop="true" preload="auto" class="videot" id="videoPanel2" height="100%" width="100%" preload>
+	    	<source src="" type="video/mp4" >
+	    </video>
+	    <img style="display: none;" id="imagePanel2" class="sm-imgPanel sm-imgPanelSmall" src="">
+	    <div class="sm-photoCaption">
+	    	<span style="width: 80%; margin-top: 6px;">Improved management of these natural resources – including reefs, mangrove forests, fisheries and floodplains – will provide increased sources of sustainable food and income while protecting people and their livelihoods.</span>
+	    </div>
+	</div>
+	<div class="sm-textPanel">
+		<div>
+			The goal of Resilient Coastal Cities is to enhance local collaboration and problem solving to support effective climate change adaptation within the humanitarian cycle of preparedness, response, and recovery. <br><br>TNC is providing city-specific ecosystem data that can assist and guide city level planners and community members to make informed decisions for appropriate nature-based adaptation solutions, or natural infrastructure, as a critical component of disaster risk reduction before, during, and after flood events. This app is designed to support local coalition planning for Palang Merah Indonesia and the city of Semarang in Central Java, Indonesia.
+		</div>
+	</div>
+
+	<!-- Panel 4 ################################################################################################################ -->
+	<!-- ######################################################################################################################## -->
+	<div class="sm-storyPanel sm-storyPanel3" id="panel3" style="display: none;">
+		<img style="display: none;" id="imagePanel3" class="sm-imgPanel sm-imgPanel3" src="">
+		 <div class="sm-photoCaption">
+	    	<span>Need a caption here</span>
+	    </div>
+	</div>
+	<div class="sm-textPanel">
+		<div>
+			By blending TNC’s experience with science-based ecosystem conservation with the Red Cross’s experience in community mobilization, one of the project’s main objectives is to assess flooding through social media and identify opportunities for mangrove restoration as a means to reduce coastal inundation. <div style="text-align: center; margin-left: -22px;"><a href="#mapPanel">Explore the app now!</a></div>
+		</div>
+	</div>
+	<!--  application panel, usually goes on the bottom of the site ################################################################################################################################-->
+	<!-- ######################################################################################################################## -->
+	<div class="sm-appPanel" id="mapPanel" style="display: none;">
+		<!-- Text that instructs user to scroll to bottom -->
+		<div class="sm-appPanelCover" id="appPanelCover"><div class="sm-appPanelCoverText">Scroll to the Bottom to use Mapping Application.</div></div>
+		<div class="sm-appScrollIconWrapper" style="display: none;">
+			<img class="sm-appScrollIcon" style="height: 55px;" src="images/scroll-invite.png">
+			<div class="sm-backToTopText">Back to Top</div>
+		</div>
+		<!-- Bring in the app code and place it in the appCode folder, if you have an index.html file it will load your app in this panel -->
+		<embed style="width: 100%; height: 100%; " src="http://maps.coastalresilience.org/indonesia/"></embed>
+	</div>
+  </body>
+</html>

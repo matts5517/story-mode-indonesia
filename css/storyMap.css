@@ -1,0 +1,148 @@
+/* Story Map CSS /////////////////////////////////*/
+/* Overall styling */
+/* main styles ///////////////////////////////////////////////////////////////////*/
+
+html, body{
+	height:100%; padding:0; margin:0; background-color: white; font-family: 'open_sans';
+}
+
+video {
+    object-fit: fill; height: 100%; width: 100%;
+}
+/* panel styling  /////////////////////////////////////////////*/
+.sm-storyPanel{
+	height: 100%; margin-bottom: 25px; text-align: center;
+}
+/* text panel styling //////////////////////////////////////////////*/
+.sm-textPanel{
+	width: 45%; font-size: 20px; margin: auto; line-height: 150%; text-align: left; 
+	font-family: 'open_sans'; color: #4c4c4c; margin-bottom: 25px;ß
+}
+.sm-appPanel{
+	height: 101%; margin-top:11px;
+}
+.sm-appPanelCover{
+	height: 100%; width: 100%; z-index: 1000; position: absolute; background-color: rgba(255,255,255,0.5); text-align: center;
+}
+.sm-appPanelCoverText{
+	margin-top: 15%; color: black; font-size: 50px; opacity: 0.7;
+}
+/* image styling //////////////////////////////////////////////////*/
+.sm-imgPanel{
+	 width: 100%; height: 100%;
+}
+.sm-imgPanelWithCaption{
+	 width: 100%; height: 96%; 
+}
+.sm-imgPanelSmall{
+	width: 80%; height: 70%;
+}
+.sm-leftImg{
+	width: 45%; height: 80%; margin-top: 5.5%; margin-left: 5%;
+}
+.sm-rightImg{
+
+}
+.sm-photoCaption{
+	position: relative; font-size: 16px; opacity: .75; text-align: center; width: 100%; height: 4%; 
+	margin-top: -4px;  display: flex; justify-content: center; align-items: center;
+}
+
+/* main logo styling //////////////////////////////////////////////*/
+.sm-logoWrapper{
+	display: flex; position: absolute; top: 10px; width: 155px; background-color: white; border-radius: 17px; opacity: 0.7; left: 10px;
+}
+.sm-logoWrapper img{
+	padding: 9px;
+}
+/* skip to map button styling //////////////////////////////////////*/
+.sm-skipToMap{
+	position: absolute; top: 10px; right: 10px; color: white; z-index: 1000;
+}
+.sm-skipToMap:hover{
+	cursor: pointer; color: orange;
+}
+/* app panel text styling ////////////////////////////////////////////*/
+.sm-panel1Header{
+	position: absolute;font-size: 80px; top: 42%; color: white; width: 100%; 
+	background-color: rgba(64, 93, 104, .5); height: 115px; text-align: center; line-height: 1.5;
+}
+.sm-panel1TextBody{
+	position: absolute; top: 60%; width: 80%; left: 10%; color: white; font-size: 20px; opacity: 0.7;
+}
+.sm-panel2Header{
+	position: absolute;font-size: 38px; margin-top: 20%; color: white; width: 100%; height: 115px; text-align: center;
+	
+}
+.sm-panel2TextBody{
+	position: absolute; margin-top: 25%; width: 80%; left: 10%; color: white; font-size: 20px; opacity: 0.7;
+}
+.sm-panel4Header{
+	position: absolute;font-size: 38px; margin-top: 20%; color: white; width: 100%; height: 115px; text-align: center;
+	
+}
+.sm-panel4TextBody{
+	position: absolute; margin-top: 25%; width: 80%; left: 10%; color: white; font-size: 20px; opacity: 0.7;
+}
+/* text right style */
+.sm-textRightWrapper{
+	margin-top: 15.5%; position: absolute; width: 40%; color: black; left: 55%; text-align: center;
+}
+.sm-headerTextRight{
+	color: black; font-size: 30px; margin-bottom: 10px;
+}
+.sm-textBodyRight{
+	 color: black; font-size: 24px; 
+}
+/* text left style */
+.sm-textLeftWrapper{
+	margin-top: 5.5%; position: absolute; width: 40%; color: black; left: 55%; text-align: center;
+}
+.sm-headerTextLeft{
+	color: black; font-size: 30px; margin-bottom: 10px;
+}
+.sm-textBodyLeft{
+	 color: black; font-size: 20px; 
+}
+
+
+/* scroll button styling //////////////////////////////////////////////*/
+.sm-scrollDownWrapper:hover{
+	cursor: pointer; opacity: 0.8;
+}
+.sm-appScrollIconWrapper{
+	position: absolute; left: 56%; margin-top: 5%; border-radius: 10px; 
+}
+.sm-appScrollIconWrapper:hover{
+	cursor: pointer; background-color: rgba(255,255,255,0.3); 
+}
+.sm-appScrollIcon{
+	transform: rotate(180deg); padding-top: 2px;
+}
+/*.sm-appScrollIcon:hover{
+	cursor: pointer;
+}*/
+.sm-backToTopText{
+	font-size: 23px; color: white; margin-left: 14px; padding-bottom: 4px;
+}
+/* individual panel style overrides //////////////////////////////////*/
+.sm-storyPanel4{
+	margin-bottom: -187px;
+}
+.sm-storyPanel2{
+	margin-bottom: -163px;
+}
+.sm-storyPanel3{
+	margin-bottom: -176px;
+}
+.sm-imgPanel3{
+	width: 70%; height: 70%;
+}
+.sm-photoCaption4{
+	margin-top: -19px;
+}
+
+
+
+
+
